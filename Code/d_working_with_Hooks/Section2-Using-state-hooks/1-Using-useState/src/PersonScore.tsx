@@ -7,6 +7,7 @@ export function PersonScore() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log('effect function fired');
     getPerson().then((person) => {
       setLoading(false);
       setName(person.name);
